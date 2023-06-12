@@ -1,0 +1,12 @@
+/Users/mohammedshereif/Projects/interview/Getronics/email-otp-module/EmailOTP/bin/Debug/net7.0/EmailOTP.deps.json
+/Users/mohammedshereif/Projects/interview/Getronics/email-otp-module/EmailOTP/bin/Debug/net7.0/EmailOTP.dll
+/Users/mohammedshereif/Projects/interview/Getronics/email-otp-module/EmailOTP/bin/Debug/net7.0/EmailOTP.pdb
+/Users/mohammedshereif/Projects/interview/Getronics/email-otp-module/EmailOTP/obj/Debug/net7.0/EmailOTP.csproj.AssemblyReference.cache
+/Users/mohammedshereif/Projects/interview/Getronics/email-otp-module/EmailOTP/obj/Debug/net7.0/EmailOTP.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mohammedshereif/Projects/interview/Getronics/email-otp-module/EmailOTP/obj/Debug/net7.0/EmailOTP.AssemblyInfoInputs.cache
+/Users/mohammedshereif/Projects/interview/Getronics/email-otp-module/EmailOTP/obj/Debug/net7.0/EmailOTP.AssemblyInfo.cs
+/Users/mohammedshereif/Projects/interview/Getronics/email-otp-module/EmailOTP/obj/Debug/net7.0/EmailOTP.csproj.CoreCompileInputs.cache
+/Users/mohammedshereif/Projects/interview/Getronics/email-otp-module/EmailOTP/obj/Debug/net7.0/EmailOTP.dll
+/Users/mohammedshereif/Projects/interview/Getronics/email-otp-module/EmailOTP/obj/Debug/net7.0/refint/EmailOTP.dll
+/Users/mohammedshereif/Projects/interview/Getronics/email-otp-module/EmailOTP/obj/Debug/net7.0/EmailOTP.pdb
+/Users/mohammedshereif/Projects/interview/Getronics/email-otp-module/EmailOTP/obj/Debug/net7.0/ref/EmailOTP.dll
