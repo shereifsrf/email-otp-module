@@ -7,12 +7,14 @@ namespace EmailOTP.Tests.Services;
 
 public class UserServiceTests : IClassFixture<TestFixture>
 {
-    TestFixture _fixture;
+    // TestFixture _fixture;
+    private readonly IUserService _mockUserService;
     const string existingUserEmail = "tester1@dso.org.sg";
 
     public UserServiceTests(TestFixture fixture)
     {
-        _fixture = fixture;
+        // _fixture = fixture;
+        _mockUserService = TestDataHelper.MockUserService();
     }
 
     [Theory]
@@ -42,7 +44,7 @@ public class UserServiceTests : IClassFixture<TestFixture>
     public void Get_ShouldReturnCorrectResponse(string email, User? expected)
     {
         // Arrange
-        var mockUserService = _fixture._mockUserService;
+        var mockUserService = _mockUserService;
 
         // Act
         var actual = mockUserService.Get(email);
@@ -67,7 +69,7 @@ public class UserServiceTests : IClassFixture<TestFixture>
     public void AddOTP_ShouldReturnCorrectResponse(string email, string otpCode, bool expected)
     {
         // Arrange
-        var mockUserService = _fixture._mockUserService;
+        var mockUserService = _mockUserService;
 
         // Act
         var actual = mockUserService.AddOTP(email, otpCode);
@@ -80,7 +82,7 @@ public class UserServiceTests : IClassFixture<TestFixture>
     public void AddOTP_ShouldHaveOTP()
     {
         // Arrange
-        var mockUserService = _fixture._mockUserService;
+        var mockUserService = _mockUserService;
         var email = existingUserEmail;
 
         // Act
@@ -99,7 +101,7 @@ public class UserServiceTests : IClassFixture<TestFixture>
     public void AddOTP_ShouldNotHaveOTP()
     {
         // Arrange
-        var mockUserService = _fixture._mockUserService;
+        var mockUserService = _mockUserService;
         var email = "t@f.com";
 
         // Act
@@ -114,7 +116,7 @@ public class UserServiceTests : IClassFixture<TestFixture>
     public void VerifyOTP_ShouldNotCheck_UserNotExist()
     {
         // Arrange
-        var mockUserService = _fixture._mockUserService;
+        var mockUserService = _mockUserService;
         var email = "t@f.com";
 
         // Act
@@ -128,7 +130,7 @@ public class UserServiceTests : IClassFixture<TestFixture>
     public void VerifyOTP_ShouldNotCheck_OTPNotExist()
     {
         // Arrange
-        var mockUserService = _fixture._mockUserService;
+        var mockUserService = _mockUserService;
         var email = existingUserEmail;
 
         // Act
@@ -142,7 +144,7 @@ public class UserServiceTests : IClassFixture<TestFixture>
     public void VerifyOTP_ShouldBeExpired()
     {
         // Arrange
-        var mockUserService = _fixture._mockUserService;
+        var mockUserService = _mockUserService;
         var user = mockUserService.Get(existingUserEmail);
         user!.OTP = new("123456", DateTime.Now);
         user.OTP.OTPExpiryTime = DateTime.Now.AddMinutes(-1);
@@ -158,7 +160,7 @@ public class UserServiceTests : IClassFixture<TestFixture>
     public void VerifyOTP_ShouldBeWrong()
     {
         // Arrange
-        var mockUserService = _fixture._mockUserService;
+        var mockUserService = _mockUserService;
         var user = mockUserService.Get(existingUserEmail);
         user!.OTP = new("123456", DateTime.Now);
 
@@ -172,7 +174,7 @@ public class UserServiceTests : IClassFixture<TestFixture>
     [Fact]
     public void VerifyOTP_ShouldMaxOTPAttempt()
     {
-        var mockUserService = _fixture._mockUserService;
+        var mockUserService = _mockUserService;
         var user = mockUserService.Get(existingUserEmail);
         user!.OTP = new("123456", DateTime.Now);
 
@@ -191,7 +193,7 @@ public class UserServiceTests : IClassFixture<TestFixture>
     [Fact]
     public void VerifyOTP_ShouldBeOK()
     {
-        var mockUserService = _fixture._mockUserService;
+        var mockUserService = _mockUserService;
         var user = mockUserService.Get(existingUserEmail);
         user!.OTP = new("123456", DateTime.Now);
 
