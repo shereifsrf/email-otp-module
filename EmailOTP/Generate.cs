@@ -5,7 +5,8 @@ public static class Generate
     public static string OTPCode()
     {
         var random = new Random();
-        var otpCode = random.Next(1, 999999).ToString().PadLeft(6, '0');
+        // from 000001 to 999999
+        var otpCode = random.Next(1, 1000000).ToString("000000");
         return otpCode;
     }
 }

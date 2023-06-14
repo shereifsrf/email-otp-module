@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "X/R5ge0l7YBnmE3oQnU637TDO9StM+u6GurmmxfWZwn3xraDeZ9T2ON1RY3klGYajNOZLie37vk19/6fG4xZ0A==",
+  "dgSpecHash": "d3egcQL65KNwhipvKvUAO77KyRd2gIjki5cfDNlSWEuc5d0SNWKpBvp4ed/jl8YZrr1VgJo2nC5OJDXoiA+IOg==",
   "success": true,
   "projectFilePath": "/Users/mohammedshereif/Projects/interview/Getronics/email-otp-module/EmailOTP.Tests/EmailOTP.Tests.csproj",
   "expectedPackageFiles": [
+    "/Users/mohammedshereif/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
     "/Users/mohammedshereif/.nuget/packages/coverlet.collector/3.2.0/coverlet.collector.3.2.0.nupkg.sha512",
     "/Users/mohammedshereif/.nuget/packages/microsoft.codecoverage/17.5.0/microsoft.codecoverage.17.5.0.nupkg.sha512",
     "/Users/mohammedshereif/.nuget/packages/microsoft.net.test.sdk/17.5.0/microsoft.net.test.sdk.17.5.0.nupkg.sha512",
@@ -12,6 +13,7 @@
     "/Users/mohammedshereif/.nuget/packages/microsoft.testplatform.objectmodel/17.5.0/microsoft.testplatform.objectmodel.17.5.0.nupkg.sha512",
     "/Users/mohammedshereif/.nuget/packages/microsoft.testplatform.testhost/17.5.0/microsoft.testplatform.testhost.17.5.0.nupkg.sha512",
     "/Users/mohammedshereif/.nuget/packages/microsoft.win32.primitives/4.3.0/microsoft.win32.primitives.4.3.0.nupkg.sha512",
+    "/Users/mohammedshereif/.nuget/packages/moq/4.18.4/moq.4.18.4.nupkg.sha512",
     "/Users/mohammedshereif/.nuget/packages/netstandard.library/1.6.1/netstandard.library.1.6.1.nupkg.sha512",
     "/Users/mohammedshereif/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
     "/Users/mohammedshereif/.nuget/packages/nuget.frameworks/5.11.0/nuget.frameworks.5.11.0.nupkg.sha512",
@@ -38,6 +40,7 @@
     "/Users/mohammedshereif/.nuget/packages/system.console/4.3.0/system.console.4.3.0.nupkg.sha512",
     "/Users/mohammedshereif/.nuget/packages/system.diagnostics.debug/4.3.0/system.diagnostics.debug.4.3.0.nupkg.sha512",
     "/Users/mohammedshereif/.nuget/packages/system.diagnostics.diagnosticsource/4.3.0/system.diagnostics.diagnosticsource.4.3.0.nupkg.sha512",
+    "/Users/mohammedshereif/.nuget/packages/system.diagnostics.eventlog/6.0.0/system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "/Users/mohammedshereif/.nuget/packages/system.diagnostics.tools/4.3.0/system.diagnostics.tools.4.3.0.nupkg.sha512",
     "/Users/mohammedshereif/.nuget/packages/system.diagnostics.tracing/4.3.0/system.diagnostics.tracing.4.3.0.nupkg.sha512",
     "/Users/mohammedshereif/.nuget/packages/system.globalization/4.3.0/system.globalization.4.3.0.nupkg.sha512",

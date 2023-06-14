@@ -74,7 +74,7 @@ public class UserService : IUserService
         }
 
         // check if the otp code is expired
-        if (user.OTP.OTPExpiryTime < DateTime.UtcNow)
+        if (user.OTP.OTPExpiryTime < DateTime.Now)
         {
             return OTPStatusEnum.EXPIRED;
         }
